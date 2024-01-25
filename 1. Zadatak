@@ -1,0 +1,4 @@
+member(X, [X|Tail]).
+member(X, [Y|Tail]) :- member(X, Tail); member(X,Y).
+
+member( a, [r,t, [a,b])

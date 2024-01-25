@@ -1,0 +1,5 @@
+nzd(0, X, X):- X > 0, !.
+nzd(X, Y, Z):- X >= Y, X1 is X-Y, nzd(X1,Y,Z).
+nzd(X, Y, Z):- X < Y, X1 is Y-X, nzd(X1,X,Z).
+
+nzd(12, 8, X)
